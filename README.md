@@ -14,9 +14,18 @@ Reproducció acadèmica de la pàgina de Strata amb HTML i CSS.
 
 A la branca de treball, obre `index.html` amb Live Server de Visual Studio Code.
 
+## Fonts locals
+
+Les fonts del ZIP de l'exercici es troben a `assets/fonts` i es carreguen abans d'`estils.css`.
+
+- Plus Jakarta Sans per al text principal i els títols.
+- JetBrains Mono per a les classes `etiqueta` i `dada`, que es faran servir en les seccions següents.
+
+Es conserven les llicències OFL de les dues famílies dins de la mateixa carpeta. No cal Google Fonts ni connexió a Internet per carregar-les.
+
 ## Pendent
 
-- Incorporar els recursos i les fonts locals del ZIP de l'exercici.
+- Incorporar els logotips i les imatges del ZIP de l'exercici.
 - Completar les seccions segons les captures de referència.
 - Afegir els scripts facilitats per a l'animació del hero.
 - Revisar la versió d'escriptori i mòbil.
