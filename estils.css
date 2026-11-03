@@ -65,3 +65,13 @@ footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
 }
+
+@media (max-width: 767px) {
+    .capcalera {
+        gap: 16px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
