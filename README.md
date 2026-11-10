@@ -64,6 +64,10 @@ S'han comprovat les rutes, l'ordre, la sintaxi dels scripts i la coincidència a
 
 Les targetes Atlas, Nexus i Canvas fan servir Flexbox i els textos de `referencies/textos.txt`. En escriptori es reparteixen en tres columnes i, sota 768 px, passen a una sola columna. La franja de Core també passa d'una fila a una disposició vertical. Els colors i les mides parteixen de les captures del ZIP; la comparació visual de la pàgina en un navegador queda pendent.
 
+## Operational Value
+
+La franja de missatge utilitza degradats CSS i els dos textos de la referència. El panell mostra les dades il·lustratives estàtiques de la captura: 428.610 dòlars recuperats (+18% MoM) i 1.284 hores de capacitat (aproximadament 12 setmanes equivalents a jornada completa). No són dades reals del projecte ni comptadors en directe. Les mètriques passen de dues columnes Flexbox a una sota 768 px.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).

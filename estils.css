@@ -293,6 +293,133 @@ section {
     flex: 1;
 }
 
+.franja-missatge {
+    padding: 80px 0;
+    text-align: center;
+    border-top: 1px solid #deded8;
+    border-bottom: 1px solid #deded8;
+    background:
+        radial-gradient(ellipse at 0 100%, #d6e2bc, transparent 45%),
+        radial-gradient(ellipse at 100% 0, #bfd1eb, transparent 40%),
+        #f2f1eb;
+}
+
+.franja-missatge p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.35;
+    letter-spacing: -0.7px;
+}
+
+.franja-missatge p + p {
+    margin-top: 24px;
+    color: #5c5c5e;
+}
+
+.valor-operatiu {
+    padding: 140px 0;
+}
+
+.etiqueta-marcada::before {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 7px;
+    margin-right: 10px;
+    background: linear-gradient(90deg, #8bb45e, #43b4a5, #5c85ce);
+}
+
+.panell-valor {
+    max-width: 980px;
+    margin-top: 56px;
+    padding: 36px 40px 40px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(120deg, #dbe4c9, #bdd8e2, #b7bde9) border-box;
+    box-shadow: 0 20px 35px #2222220d;
+}
+
+.capcalera-valor {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ededed;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #707176;
+}
+
+.capcalera-valor p {
+    margin: 0;
+}
+
+.metriques {
+    display: flex;
+    gap: 48px;
+    padding-top: 20px;
+}
+
+.metrica {
+    flex: 1;
+    min-width: 0;
+}
+
+.etiqueta-metrica {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.etiqueta-metrica::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 4px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #8bb45e, #43b4a5, #5c85ce);
+}
+
+.valor-metrica {
+    margin: 14px 0 10px;
+    font-size: 80px;
+    line-height: 1.1;
+    letter-spacing: -3px;
+}
+
+.simbol-moneda, .unitat-metrica {
+    color: #797b80;
+}
+
+.unitat-metrica {
+    margin-left: 4px;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.detall-metrica {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #707176;
+}
+
+.canvi-metrica {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid #c5d9ec;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #e2f0e8, #dfe9fa);
+    color: #222;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
 footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
@@ -374,6 +501,42 @@ footer {
 
     .platform-core h3 {
         flex: auto;
+    }
+
+    .franja-missatge p {
+        font-size: 23px;
+        letter-spacing: -0.5px;
+    }
+
+    .valor-operatiu {
+        padding: 90px 0;
+    }
+
+    .valor-operatiu .titol-seccio br {
+        display: none;
+    }
+
+    .panell-valor {
+        padding: 18px;
+    }
+
+    .capcalera-valor p {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .metriques {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .valor-metrica {
+        font-size: 50px;
+        letter-spacing: -1.5px;
+    }
+
+    .unitat-metrica {
+        font-size: 30px;
     }
 }
 
