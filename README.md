@@ -41,7 +41,9 @@ El logotip i la icona provenen del ZIP de l'exercici i es carreguen des d'`asset
 
 El títol, el paràgraf i els dos enllaços segueixen `referencies/textos.txt` del ZIP. El fons i la paraula «done» es construeixen amb degradats CSS. La mida del títol es redueix per sota de 768 px i els enllaços es distribueixen amb Flexbox.
 
-Queden pendents la imatge de Nexus i l'animació facilitada. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
+La captura de Nexus es carrega des d'`assets/img/nexus-screenshot.webp`, sense modificar el fitxer del ZIP. La imatge conserva la proporció original. En mòbil, el contenidor mostra només la part superior de la captura, com a la referència, sense deformar-la.
+
+Queda pendent l'animació facilitada. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
 
 ## Referència
 

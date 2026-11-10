@@ -119,7 +119,7 @@ section {
     isolation: isolate;
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0;
     background:
         radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
         radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
@@ -169,6 +169,20 @@ section {
     margin-left: 8px;
 }
 
+.vista-nexus {
+    margin-top: 136px;
+    overflow: hidden;
+    border: 1px solid #dfe4e3;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 0 36px #dce9e866;
+}
+
+.vista-nexus img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
@@ -200,7 +214,7 @@ footer {
 
     .hero {
         padding-top: 64px;
-        padding-bottom: 80px;
+        padding-bottom: 0;
     }
 
     .hero h1 {
@@ -214,5 +228,11 @@ footer {
     .text-hero {
         font-size: 19px;
         line-height: 1.5;
+    }
+
+    .vista-nexus {
+        max-height: 70px;
+        border-bottom: none;
+        border-radius: 12px 12px 0 0;
     }
 }
