@@ -772,6 +772,133 @@ section {
     color: #4b945a;
 }
 
+.governance {
+    padding: 140px 0;
+}
+
+.governance-intro {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.governance-targetes {
+    display: flex;
+    gap: 18px;
+    margin-top: 48px;
+}
+
+.governance-carta {
+    flex: 1;
+    min-width: 0;
+    min-height: 260px;
+    padding: 36px;
+    border: 1px solid #e5e5e2;
+    border-top: 3px solid;
+    border-radius: 14px;
+}
+
+.governance-carta h3 {
+    margin: 4px 0 24px;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.governance-carta h3::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.governance-carta p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #797b80;
+}
+
+.cited { border-top-color: #58a4d4; }
+.approved { border-top-color: #79ab7b; }
+.contained { border-top-color: #9b42c8; }
+.controlled { border-top-color: #dfcb55; }
+.cited h3::before { background-color: #58a4d4; }
+.approved h3::before { background-color: #79ab7b; }
+.contained h3::before { background-color: #9b42c8; }
+.controlled h3::before { background-color: #3d3d41; }
+
+.execucio {
+    display: flex;
+    gap: 16px;
+    margin: 56px 0 44px;
+    padding: 0;
+    list-style: none;
+}
+
+.execucio li {
+    flex: 1;
+    min-width: 0;
+}
+
+.numero-execucio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #797b80;
+}
+
+.numero-execucio::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+}
+
+.execucio li:nth-child(1) .numero-execucio::after { background: linear-gradient(90deg, #dfcb55, #79ab7b); }
+.execucio li:nth-child(2) .numero-execucio::after { background: linear-gradient(90deg, #79ab7b, #58a4d4); }
+.execucio li:nth-child(3) .numero-execucio::after { background: linear-gradient(90deg, #58a4d4, #9b42c8); }
+.execucio li:nth-child(4) .numero-execucio::after { background: linear-gradient(90deg, #9b42c8, transparent); }
+
+.execucio h3 {
+    margin: 16px 0 10px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.execucio p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #797b80;
+}
+
+.garanties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #797b80;
+}
+
+.garanties li:not(:last-child)::after {
+    content: "·";
+    margin-left: 12px;
+}
+
 footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
@@ -981,6 +1108,53 @@ footer {
 
     .nodes-targetes {
         flex-direction: column;
+    }
+
+    .governance {
+        padding: 90px 0;
+    }
+
+    .governance-targetes {
+        flex-direction: column;
+    }
+
+    .governance-carta {
+        flex: auto;
+        padding: 28px 24px;
+    }
+
+    .execucio {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .execucio li {
+        position: relative;
+        min-height: 112px;
+        padding: 28px 0 28px 60px;
+    }
+
+    .numero-execucio {
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+
+    .numero-execucio::after {
+        position: absolute;
+        top: 18px;
+        left: 9px;
+        width: 2px;
+        height: 84px;
+    }
+
+    .execucio h3 {
+        margin-top: 0;
+    }
+
+    .garanties {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 

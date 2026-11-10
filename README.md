@@ -80,6 +80,10 @@ La llista inclou els sis serveis del material de referència, amb etiquetes, sep
 
 La secció incorpora la captura local d'Atlas, els quatre passos i els dos nodes amb els textos del ZIP. La consulta és una representació estàtica de l'exemple de la captura: no envia preguntes ni té un botó interactiu. Els nodes també es representen estàticament, sense editar dades reals. La imatge conserva la proporció i els passos, la consulta i les targetes passen a una columna en mòbil. La icona de cerca i la marca de confirmació també són recursos locals del ZIP.
 
+## Governance
+
+S'han reproduït les quatre targetes, la seqüència numerada d'una execució i la franja de garanties amb els textos del material de referència. Les targetes i els passos es distribueixen amb Flexbox i passen a una columna sota 768 px. Els quatre passos s'estructuren amb una llista ordenada i les garanties amb una llista. Són continguts de la reproducció acadèmica, no funcionalitats de seguretat implementades per aquest projecte.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
