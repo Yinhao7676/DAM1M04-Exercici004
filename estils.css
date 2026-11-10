@@ -126,6 +126,26 @@ section {
         #fbfbfa;
 }
 
+.hero-graph {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+
+.hero-graph canvas {
+    display: block;
+    background: transparent;
+    pointer-events: none;
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
 .simbol-hero {
     display: block;
     width: 56px;
@@ -234,5 +254,11 @@ footer {
         max-height: 70px;
         border-bottom: none;
         border-radius: 12px 12px 0 0;
+    }
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+    .hero-graph {
+        display: none !important;
     }
 }

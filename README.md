@@ -27,7 +27,7 @@ Es conserven les llicències OFL de les dues famílies dins de la mateixa carpet
 
 - Completar les imatges de producte del ZIP de l'exercici.
 - Completar les seccions segons les captures de referència.
-- Afegir els scripts facilitats per a l'animació del hero.
+- Comprovar l'animació del hero en un navegador amb WebGL.
 - Revisar la versió d'escriptori i mòbil.
 - Completar els crèdits i les instruccions de publicació.
 
@@ -43,7 +43,22 @@ El títol, el paràgraf i els dos enllaços segueixen `referencies/textos.txt` d
 
 La captura de Nexus es carrega des d'`assets/img/nexus-screenshot.webp`, sense modificar el fitxer del ZIP. La imatge conserva la proporció original. En mòbil, el contenidor mostra només la part superior de la captura, com a la referència, sense deformar-la.
 
-Queda pendent l'animació facilitada. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
+S'han incorporat els scripts facilitats per al fons animat. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
+
+## Animació del hero
+
+El ZIP facilita `hero-graph.js`, descarregat de [Strata](https://www.strata.ai/hero-graph.js) el 19/10/2026. Es conserva sense modificacions. Segons `referencies/animacio-origen.txt`, el script original no inclou una declaració de llicència oberta.
+
+També es conserven sense modificacions les dues biblioteques facilitades:
+
+- Three.js r149, procedent de `https://www.strata.ai/assets/vendor/three.min.js`. Projecte: [Three.js](https://github.com/mrdoob/three.js). Llicència MIT completa a `assets/js/vendor/three-LICENSE.txt`.
+- 3d-force-graph 1.73.4, procedent de `https://www.strata.ai/assets/vendor/3d-force-graph.min.js`. Projecte: [3d-force-graph](https://github.com/vasturiano/3d-force-graph). Llicència MIT completa a `assets/js/vendor/3d-force-graph-LICENSE.txt`.
+
+Les llicències MIT corresponen a les biblioteques, no al script original de Strata. Tots tres scripts es carreguen localment, en aquest ordre i amb `defer`. No s'ha escrit JavaScript propi.
+
+El script crea el canvas automàticament dins de `.hero`; el contingut de `.hero > .container` queda en una capa superior. El gràfic no intercepta els clics i s'amaga per sota de 768 px o quan es prefereix reduir el moviment, mantenint el degradat CSS. En passar de mòbil a escriptori, cal recarregar per iniciar el gràfic.
+
+S'han comprovat les rutes, l'ordre, la sintaxi dels scripts i la coincidència amb els fitxers del ZIP. El funcionament visual amb WebGL i la prova en les amplades de referència queden pendents.
 
 ## Referència
 
