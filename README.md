@@ -37,6 +37,12 @@ La maquetació es farà amb Flexbox, sense Grid ni JavaScript propi.
 
 El logotip i la icona provenen del ZIP de l'exercici i es carreguen des d'`assets/img`. La capçalera es manté visible amb `position: sticky`. En mòbil s'amaga la navegació central i queda visible el botó «Book a Demo». L'avís d'ILTACON reprodueix el text de la captura de referència.
 
+## Hero inicial
+
+El títol, el paràgraf i els dos enllaços segueixen `referencies/textos.txt` del ZIP. El fons i la paraula «done» es construeixen amb degradats CSS. La mida del títol es redueix per sota de 768 px i els enllaços es distribueixen amb Flexbox.
+
+Queden pendents la imatge de Nexus i l'animació facilitada. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
