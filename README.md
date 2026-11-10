@@ -25,13 +25,17 @@ Es conserven les llicències OFL de les dues famílies dins de la mateixa carpet
 
 ## Pendent
 
-- Incorporar els logotips i les imatges del ZIP de l'exercici.
+- Completar les imatges de producte del ZIP de l'exercici.
 - Completar les seccions segons les captures de referència.
 - Afegir els scripts facilitats per a l'animació del hero.
 - Revisar la versió d'escriptori i mòbil.
 - Completar els crèdits i les instruccions de publicació.
 
 La maquetació es farà amb Flexbox, sense Grid ni JavaScript propi.
+
+## Capçalera
+
+El logotip i la icona provenen del ZIP de l'exercici i es carreguen des d'`assets/img`. La capçalera es manté visible amb `position: sticky`. En mòbil s'amaga la navegació central i queda visible el botó «Book a Demo». L'avís d'ILTACON reprodueix el text de la captura de referència.
 
 ## Referència
 

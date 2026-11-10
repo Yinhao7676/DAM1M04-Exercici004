@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1184px;
     margin: auto;
     padding: 0 24px;
 }
@@ -31,25 +31,68 @@ header {
     top: 0;
     z-index: 10;
     background-color: white;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e5e5e3;
 }
 
-.capcalera, nav {
+.capcalera, nav, .accions-capcalera {
     display: flex;
     align-items: center;
     gap: 24px;
-    flex-wrap: wrap;
 }
 
 .capcalera {
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    min-height: 66px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 106px;
+    height: auto;
+}
+
+nav {
+    font-size: 13px;
+    color: #656568;
+}
+
+.accions-capcalera {
+    gap: 14px;
+}
+
+.avis-esdeveniment {
+    border: 1px solid #dededc;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 11px;
+    color: #656568;
+}
+
+.avis-esdeveniment span {
+    color: #d77da1;
+    margin-right: 4px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #1b1b1e;
+    color: white;
+    border-radius: 30px;
+    padding: 11px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.boton:hover {
+    background-color: #39393e;
+    text-decoration: none;
 }
 
 a {
@@ -76,9 +119,24 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+@media (max-width: 1000px) {
+    .avis-esdeveniment {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .capcalera {
         gap: 16px;
+    }
+
+    nav {
+        display: none;
     }
 
     section {
