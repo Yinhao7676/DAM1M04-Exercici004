@@ -2,13 +2,9 @@
 
 Reproducció acadèmica de la pàgina de Strata amb HTML i CSS.
 
-## Primer dia
+## Estat del projecte
 
-- Preparació del repositori i de la branca `dia-1-reinicio`.
-- Estructura inicial de la pàgina i navegació interna.
-- Primers estils amb Flexbox i contenidor centrat.
-
-És una base de treball: encara no reprodueix el disseny complet.
+La branca `capcalera-hero` inclou la pàgina completa: Hero, Platform, Operational Value, From the Field, Workflows, Atlas, Governance, Get Started i peu. Es conserva el desenvolupament anterior en l’historial. No s’ha fusionat amb `main`.
 
 ## Com obrir el projecte
 
@@ -19,19 +15,15 @@ A la branca de treball, obre `index.html` amb Live Server de Visual Studio Code.
 Les fonts del ZIP de l'exercici es troben a `assets/fonts` i es carreguen abans d'`estils.css`.
 
 - Plus Jakarta Sans per al text principal i els títols.
-- JetBrains Mono per a les classes `etiqueta` i `dada`, que es faran servir en les seccions següents.
+- JetBrains Mono per a les classes `etiqueta` i `dada`, utilitzades en les seccions.
 
 Es conserven les llicències OFL de les dues famílies dins de la mateixa carpeta. No cal Google Fonts ni connexió a Internet per carregar-les.
 
-## Pendent
+## Maquetació i adaptació
 
-- Completar les imatges de producte del ZIP de l'exercici.
-- Completar les seccions segons les captures de referència.
-- Comprovar l'animació del hero en un navegador amb WebGL.
-- Revisar la versió d'escriptori i mòbil.
-- Completar els crèdits i les instruccions de publicació.
+HTML semàntic, un sol `h1`, CSS extern i Flexbox, sense Grid ni JavaScript propi. El contenidor té una amplada màxima i marges automàtics. Els enllaços tenen estats hover i focus-visible.
 
-La maquetació es farà amb Flexbox, sense Grid ni JavaScript propi.
+Sota 1000 px, Governance passa a dues columnes, la consulta d’Atlas ocupa una fila pròpia i es redueixen les xifres grans per donar més espai al text. Sota 768 px, les seccions passen a una columna, es redueixen títols i espaiats, s’amaga el gràfic del hero i els enllaços del peu poden saltar de línia. La captura de Nexus es retalla visualment en mòbil, conservant la proporció.
 
 ## Capçalera
 
@@ -43,7 +35,7 @@ El títol, el paràgraf i els dos enllaços segueixen `referencies/textos.txt` d
 
 La captura de Nexus es carrega des d'`assets/img/nexus-screenshot.webp`, sense modificar el fitxer del ZIP. La imatge conserva la proporció original. En mòbil, el contenidor mostra només la part superior de la captura, com a la referència, sense deformar-la.
 
-S'han incorporat els scripts facilitats per al fons animat. Aquesta versió encara no és una reproducció completa. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
+S'han incorporat els scripts facilitats per al fons animat. S'han comprovat els recursos amb un servidor local; la comparació visual en navegador queda pendent.
 
 ## Animació del hero
 
@@ -66,7 +58,7 @@ Les targetes Atlas, Nexus i Canvas fan servir Flexbox i els textos de `referenci
 
 ## Operational Value
 
-La franja de missatge utilitza degradats CSS i els dos textos de la referència. El panell mostra les dades il·lustratives estàtiques de la captura: 428.610 dòlars recuperats (+18% MoM) i 1.284 hores de capacitat (aproximadament 12 setmanes equivalents a jornada completa). No són dades reals del projecte ni comptadors en directe. Les mètriques passen de dues columnes Flexbox a una sota 768 px.
+La franja de missatge utilitza degradats CSS i els dos textos de la referència. El panell mostra les dades il·lustratives estàtiques de la captura: 428.610 dòlars recuperats (+18% MoM) i 1.284 hores de capacitat (aproximadament 12 setmanes equivalents a jornada completa). No són dades reals del projecte ni comptadors en directe. Les mètriques passen de dues columnes Flexbox a una sota 768 px; en tauleta es redueix la mida de les xifres.
 
 ## From the Field
 
@@ -93,3 +85,11 @@ Els logotips, les imatges, els textos i el disseny de referència provenen de [S
 ## Get Started i peu
 
 Crida final, tres blocs de confiança i peu amb navegació interna, segons els textos i les captures del ZIP. En mòbil els blocs es col·loquen en columna i els enllaços del peu poden saltar de línia. Book a Demo porta al bloc final de la reproducció; no hi ha reserva de demos implementada.
+
+## Comprovacions i límits
+
+Revisió estàtica del HTML: estructura, un únic h1, identificadors únics, destins dels enllaços interns, atributs alt i existència dels recursos locals. Revisió del CSS: claus equilibrades, fonts locals, Flexbox sense Grid i regles de teclat, mòbil i moviment reduït. Scripts comprovats amb `node --check` i comparats byte a byte amb el ZIP, juntament amb les imatges i les fonts. Comprovació HTTP dels recursos locals amb servidor temporal.
+
+La vista prèvia de navegador disponible havia fallat per timeout. No s’ha pogut verificar visualment a 1440, 768, 390 i 360 px ni executar WebGL; aquestes proves continuen pendents. La revisió de les regles responsive no substitueix aquestes proves. Les consultes, nodes i mètriques són estàtics.
+
+No s’ha publicat a Proxmox ni Sites. La publicació a l’institut i l’aportació real del segon alumne continuen pendents; no s’atribueixen contribucions a altres persones.

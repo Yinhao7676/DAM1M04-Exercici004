@@ -1005,6 +1005,39 @@ footer {
     .avis-esdeveniment {
         display: none;
     }
+
+    .governance-targetes {
+        flex-wrap: wrap;
+    }
+
+    .governance-carta {
+        flex: 1 1 calc(50% - 18px);
+    }
+
+    .valor-metrica {
+        font-size: 58px;
+    }
+
+    .atlas-demo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .camp-layout {
+        gap: 32px;
+    }
+
+    .camp-numero {
+        font-size: 88px;
+    }
+
+    .passos-atlas {
+        gap: 24px;
+    }
+
+    .passos-atlas h3 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767px) {
