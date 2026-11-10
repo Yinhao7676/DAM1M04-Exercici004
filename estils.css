@@ -203,6 +203,96 @@ section {
     height: auto;
 }
 
+.platform {
+    padding: 120px 0 140px;
+}
+
+.etiqueta {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #707176;
+}
+
+.titol-seccio {
+    margin: 24px 0 28px;
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.platform-targetes {
+    display: flex;
+    gap: 20px;
+}
+
+.platform-carta {
+    flex: 1;
+    min-width: 0;
+    min-height: 278px;
+    padding: 36px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.platform-carta h3 {
+    margin: 4px 0 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.platform-carta h3 span, .platform-core h3 span {
+    color: #797b80;
+    font-weight: 400;
+}
+
+.platform-carta p, .platform-core p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #707176;
+}
+
+.carta-atlas {
+    background: linear-gradient(#eaf4ed, #fbfbfa 90%);
+    border-color: #c7ded1;
+}
+
+.carta-nexus {
+    background: linear-gradient(#e8eef8, #fbfbfa 90%);
+    border-color: #c4cfe9;
+}
+
+.carta-canvas {
+    background: linear-gradient(#f2e6f5, #fbfbfa 90%);
+    border-color: #d7bbdf;
+}
+
+.platform-core {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+    padding: 28px 32px;
+    background-color: #f5f5f3;
+    border: 1px solid #e0e0dd;
+    border-radius: 16px;
+}
+
+.platform-core h3 {
+    flex: 0 0 226px;
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.platform-core p {
+    flex: 1;
+}
+
 footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
@@ -254,6 +344,36 @@ footer {
         max-height: 70px;
         border-bottom: none;
         border-radius: 12px 12px 0 0;
+    }
+
+    .platform {
+        padding: 90px 0;
+    }
+
+    .titol-seccio {
+        font-size: 30px;
+        letter-spacing: -0.8px;
+    }
+
+    .platform-targetes {
+        flex-direction: column;
+    }
+
+    .platform-carta {
+        flex: auto;
+        min-height: 260px;
+        padding: 28px 24px;
+    }
+
+    .platform-core {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 28px 24px;
+    }
+
+    .platform-core h3 {
+        flex: auto;
     }
 }
 

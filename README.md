@@ -60,6 +60,10 @@ El script crea el canvas automàticament dins de `.hero`; el contingut de `.hero
 
 S'han comprovat les rutes, l'ordre, la sintaxi dels scripts i la coincidència amb els fitxers del ZIP. El funcionament visual amb WebGL i la prova en les amplades de referència queden pendents.
 
+## Platform
+
+Les targetes Atlas, Nexus i Canvas fan servir Flexbox i els textos de `referencies/textos.txt`. En escriptori es reparteixen en tres columnes i, sota 768 px, passen a una sola columna. La franja de Core també passa d'una fila a una disposició vertical. Els colors i les mides parteixen de les captures del ZIP; la comparació visual de la pàgina en un navegador queda pendent.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
