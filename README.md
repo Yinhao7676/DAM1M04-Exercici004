@@ -68,6 +68,10 @@ Les targetes Atlas, Nexus i Canvas fan servir Flexbox i els textos de `referenci
 
 La franja de missatge utilitza degradats CSS i els dos textos de la referència. El panell mostra les dades il·lustratives estàtiques de la captura: 428.610 dòlars recuperats (+18% MoM) i 1.284 hores de capacitat (aproximadament 12 setmanes equivalents a jornada completa). No són dades reals del projecte ni comptadors en directe. Les mètriques passen de dues columnes Flexbox a una sota 768 px.
 
+## From the Field
+
+La secció fosca reprodueix el cas i les dades de la referència de Strata: 13.000 factures mensuals, 19 portals, un cicle de 4–6 setmanes, un equip de 5–7 persones i cap recurs enviat automàticament. És contingut estàtic del material acadèmic. El text i la fitxa es distribueixen amb Flexbox i passen a una sola columna sota 768 px. La fitxa fa servir una llista de definicions per relacionar cada etiqueta amb la seva dada.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
