@@ -899,9 +899,106 @@ section {
     margin-left: 12px;
 }
 
+.get-started {
+    padding: 140px 0 100px;
+    border-top: 1px solid #d6d4d1;
+    background: radial-gradient(ellipse at top left, #dbe3ee, transparent 35%),
+        radial-gradient(ellipse at bottom right, #eed1db, transparent 32%), #f3f0e9;
+}
+
+.get-started h2 {
+    margin: 28px 0;
+    font-size: 72px;
+    line-height: 1.08;
+    letter-spacing: -3px;
+}
+
+.get-started h2 span {
+    background: linear-gradient(100deg, #77b868, #51ad9d, #3f77d3);
+    background-clip: text;
+    color: transparent;
+}
+
+.get-started-intro {
+    color: #7b7b80;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.confianca {
+    display: flex;
+    margin-top: 96px;
+    padding-top: 32px;
+    border-top: 1px solid #dedbd6;
+}
+
+.confianca > div {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 28px;
+    border-left: 1px solid #dedbd6;
+}
+
+.confianca > div:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.confianca h3 {
+    margin: 0;
+    font: 10px 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #76767b;
+}
+
+.confianca h3::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 6px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #8abc69, #4aaca6, #4178d5);
+}
+
+.confianca p {
+    margin: 12px 0 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 footer {
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
+    padding: 44px 0 60px;
+    background: #16171c;
+    color: #98999f;
+}
+
+.peu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.logo-peu {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #d0d0d4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.peu nav {
+    flex-wrap: wrap;
+    color: inherit;
+}
+
+.peu p {
+    margin: 0;
+    font-size: 12px;
 }
 
 @media (max-width: 1000px) {
@@ -920,7 +1017,7 @@ footer {
         gap: 16px;
     }
 
-    nav {
+    .capcalera nav {
         display: none;
     }
 
@@ -1155,6 +1252,51 @@ footer {
     .garanties {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .get-started {
+        padding: 140px 0 100px;
+    }
+
+    .get-started h2 {
+        font-size: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    .get-started h2 br {
+        display: none;
+    }
+
+    .get-started-intro {
+        font-size: 18px;
+    }
+
+    .get-started .accions-hero {
+        gap: 16px;
+    }
+
+    .confianca {
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .confianca > div,
+    .confianca > div:first-child {
+        padding: 24px 0;
+        border-left: 0;
+    }
+
+    .confianca > div + div {
+        border-top: 1px solid #dedbd6;
+    }
+
+    .peu {
+        flex-wrap: wrap;
+    }
+
+    .peu nav {
+        gap: 20px;
+        width: 100%;
     }
 }
 

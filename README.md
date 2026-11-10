@@ -89,3 +89,7 @@ S'han reproduït les quatre targetes, la seqüència numerada d'una execució i 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
 
 Els logotips, les imatges, els textos i el disseny de referència provenen de [Strata](https://www.strata.ai/). Aquest projecte és una reproducció acadèmica.
+
+## Get Started i peu
+
+Crida final, tres blocs de confiança i peu amb navegació interna, segons els textos i les captures del ZIP. En mòbil els blocs es col·loquen en columna i els enllaços del peu poden saltar de línia. Book a Demo porta al bloc final de la reproducció; no hi ha reserva de demos implementada.
