@@ -615,6 +615,163 @@ section {
     text-underline-offset: 4px;
 }
 
+.atlas {
+    padding: 140px 0;
+}
+
+.atlas-titol {
+    max-width: 980px;
+    margin: 32px 0 28px;
+    font-size: 76px;
+    line-height: 1.06;
+    letter-spacing: -3px;
+}
+
+.atlas-intro {
+    margin: 0 0 72px;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #797b80;
+}
+
+.imatge-atlas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e8e8e6;
+    border-radius: 16px;
+}
+
+.passos-atlas {
+    display: flex;
+    gap: 40px;
+    margin: 72px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.passos-atlas li {
+    flex: 1;
+    min-width: 0;
+    padding-top: 20px;
+    border-top: 2px solid #343438;
+}
+
+.passos-atlas h3 {
+    margin: 0 0 10px;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.passos-atlas p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #797b80;
+}
+
+.atlas-explicacio {
+    max-width: 860px;
+    margin: 64px 0 56px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.atlas-demo {
+    display: flex;
+    align-items: flex-start;
+    gap: 56px;
+}
+
+.consulta-atlas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1.4;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #bfc0bd;
+    border-radius: 14px;
+    box-shadow: 0 0 0 3px #ededeb;
+}
+
+.consulta-atlas > img {
+    flex-shrink: 0;
+}
+
+.consulta-atlas p {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.consulta-boto {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #29292f;
+    color: white;
+    font-size: 14px;
+}
+
+.nodes-atlas {
+    flex: 1;
+    min-width: 0;
+}
+
+.nodes-atlas > h3 {
+    margin-bottom: 14px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.nodes-targetes {
+    display: flex;
+    gap: 12px;
+}
+
+.node-atlas {
+    flex: 1;
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid #a9c8ae;
+    border-radius: 12px;
+}
+
+.node-atlas h4 {
+    margin: 0 0 10px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #797b80;
+}
+
+.node-atlas h4::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #4b945a;
+}
+
+.node-atlas p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.node-atlas .node-confirmat {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #4b945a;
+}
+
 footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
@@ -789,6 +946,41 @@ footer {
 
     .workflow-apellacions h3 {
         font-size: 20px;
+    }
+
+    .atlas {
+        padding: 90px 0;
+    }
+
+    .atlas-titol {
+        font-size: 44px;
+        letter-spacing: -1.7px;
+    }
+
+    .atlas-titol br {
+        display: none;
+    }
+
+    .atlas-intro {
+        font-size: 20px;
+    }
+
+    .passos-atlas {
+        flex-direction: column;
+    }
+
+    .atlas-explicacio {
+        margin-top: 64px;
+    }
+
+    .atlas-demo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 56px;
+    }
+
+    .nodes-targetes {
+        flex-direction: column;
     }
 }
 

@@ -76,6 +76,10 @@ La secció fosca reprodueix el cas i les dades de la referència de Strata: 13.0
 
 La llista inclou els sis serveis del material de referència, amb etiquetes, separadors i fletxes. Invoice appeals apareix com a subapartat visual d'Invoice management. Les files i la navegació són accessibles amb el teclat; els serveis apunten al bloc final de la mateixa pàgina, sense crear pàgines addicionals. Les files Flexbox passen a una distribució vertical en mòbil.
 
+## Atlas
+
+La secció incorpora la captura local d'Atlas, els quatre passos i els dos nodes amb els textos del ZIP. La consulta és una representació estàtica de l'exemple de la captura: no envia preguntes ni té un botó interactiu. Els nodes també es representen estàticament, sense editar dades reals. La imatge conserva la proporció i els passos, la consulta i les targetes passen a una columna en mòbil. La icona de cerca i la marca de confirmació també són recursos locals del ZIP.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
