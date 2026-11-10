@@ -72,6 +72,10 @@ La franja de missatge utilitza degradats CSS i els dos textos de la referència.
 
 La secció fosca reprodueix el cas i les dades de la referència de Strata: 13.000 factures mensuals, 19 portals, un cicle de 4–6 setmanes, un equip de 5–7 persones i cap recurs enviat automàticament. És contingut estàtic del material acadèmic. El text i la fitxa es distribueixen amb Flexbox i passen a una sola columna sota 768 px. La fitxa fa servir una llista de definicions per relacionar cada etiqueta amb la seva dada.
 
+## Workflows
+
+La llista inclou els sis serveis del material de referència, amb etiquetes, separadors i fletxes. Invoice appeals apareix com a subapartat visual d'Invoice management. Les files i la navegació són accessibles amb el teclat; els serveis apunten al bloc final de la mateixa pàgina, sense crear pàgines addicionals. Les files Flexbox passen a una distribució vertical en mòbil.
+
 ## Referència
 
 [Enunciat de l'exercici](https://github.com/optimisme/DAM-LlenguatgeMarques/blob/main/02-Web/09-Exercici-Strata.md).
